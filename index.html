@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Flowers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="statue.mp3" type="audio/mp3">
+      </audio>
+
+  <!-- Heading Section -->
+  <div class="header">
+    <h1>Happy Valentine's Day and Happy 6 months of friendship Bespren!❤️</h1>
+  </div>
+
+  <div class="flowers-container">
+    <div class="flower" id="flower1"></div>
+    <div class="flower" id="flower2"></div>
+    <div class="flower" id="flower3"></div>
+    <div class="flower" id="flower4"></div>
+    <div class="flower" id="flower5"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-content-body">
+        <p id="message"></p>
+        <div class="modal-media">
+          <img id="image" src="" alt="Flower Image" class="img-fluid" style="display: none;">
+          <video id="video" controls class="img-fluid" style="display: none;">
+            <source id="videoSource" src="" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
